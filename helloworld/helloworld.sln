@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld", "helloworld\helloworld.csproj", "{4D1A0E58-6A20-42C6-B743-EF9964C7A3AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "helloworld", "helloworld\helloworld.csproj", "{4D1A0E58-6A20-42C6-B743-EF9964C7A3AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "..\Array\Array.csproj", "{3F705F57-9E1D-4462-B428-0DDBD7F5F28B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4D1A0E58-6A20-42C6-B743-EF9964C7A3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D1A0E58-6A20-42C6-B743-EF9964C7A3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D1A0E58-6A20-42C6-B743-EF9964C7A3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F705F57-9E1D-4462-B428-0DDBD7F5F28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F705F57-9E1D-4462-B428-0DDBD7F5F28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F705F57-9E1D-4462-B428-0DDBD7F5F28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F705F57-9E1D-4462-B428-0DDBD7F5F28B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
