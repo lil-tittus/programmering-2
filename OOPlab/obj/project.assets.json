@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\elev.5CG6233N5Q\\.nuget\\packages\\": {}
+    "C:\\Users\\jared.tittus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elev.5CG6233N5Q\\Documents\\Github\\programmering-2\\OOPlab\\OOPlab\\OOPlab.csproj",
+      "projectUniqueName": "C:\\Users\\jared.tittus\\Documents\\Github\\programmering-2\\OOPlab\\OOPlab.csproj",
       "projectName": "OOPlab",
-      "projectPath": "C:\\Users\\elev.5CG6233N5Q\\Documents\\Github\\programmering-2\\OOPlab\\OOPlab\\OOPlab.csproj",
-      "packagesPath": "C:\\Users\\elev.5CG6233N5Q\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elev.5CG6233N5Q\\Documents\\Github\\programmering-2\\OOPlab\\OOPlab\\obj\\",
+      "projectPath": "C:\\Users\\jared.tittus\\Documents\\Github\\programmering-2\\OOPlab\\OOPlab.csproj",
+      "packagesPath": "C:\\Users\\jared.tittus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jared.tittus\\Documents\\Github\\programmering-2\\OOPlab\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\elev.5CG6233N5Q\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jared.tittus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
