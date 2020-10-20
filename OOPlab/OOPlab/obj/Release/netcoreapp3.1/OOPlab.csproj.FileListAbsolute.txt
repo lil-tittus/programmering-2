@@ -1,0 +1,12 @@
+C:\Users\jared.tittus\Documents\Github\programmering-2\OOPlab\OOPlab\bin\Release\netcoreapp3.1\OOPlab.exe
+C:\Users\jared.tittus\Documents\Github\programmering-2\OOPlab\OOPlab\bin\Release\netcoreapp3.1\OOPlab.deps.json
+C:\Users\jared.tittus\Documents\Github\programmering-2\OOPlab\OOPlab\bin\Release\netcoreapp3.1\OOPlab.runtimeconfig.json
+C:\Users\jared.tittus\Documents\Github\programmering-2\OOPlab\OOPlab\bin\Release\netcoreapp3.1\OOPlab.runtimeconfig.dev.json
+C:\Users\jared.tittus\Documents\Github\programmering-2\OOPlab\OOPlab\bin\Release\netcoreapp3.1\OOPlab.dll
+C:\Users\jared.tittus\Documents\Github\programmering-2\OOPlab\OOPlab\bin\Release\netcoreapp3.1\OOPlab.pdb
+C:\Users\jared.tittus\Documents\Github\programmering-2\OOPlab\OOPlab\obj\Release\netcoreapp3.1\OOPlab.AssemblyInfoInputs.cache
+C:\Users\jared.tittus\Documents\Github\programmering-2\OOPlab\OOPlab\obj\Release\netcoreapp3.1\OOPlab.AssemblyInfo.cs
+C:\Users\jared.tittus\Documents\Github\programmering-2\OOPlab\OOPlab\obj\Release\netcoreapp3.1\OOPlab.csproj.CoreCompileInputs.cache
+C:\Users\jared.tittus\Documents\Github\programmering-2\OOPlab\OOPlab\obj\Release\netcoreapp3.1\OOPlab.dll
+C:\Users\jared.tittus\Documents\Github\programmering-2\OOPlab\OOPlab\obj\Release\netcoreapp3.1\OOPlab.pdb
+C:\Users\jared.tittus\Documents\Github\programmering-2\OOPlab\OOPlab\obj\Release\netcoreapp3.1\OOPlab.genruntimeconfig.cache
