@@ -11,14 +11,24 @@
             <ColumnDefinition />
             <ColumnDefinition />
             <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
-        <Grid Grid.Row ="1" Grid.Column ="1" Grid.RowSpan ="2">
+        <TextBlock Name="InOutField" FontSize="50" Grid.Column="1" Grid.ColumnSpan="5" Grid.Row="0" Margin="0,20,0,0" Background="LightPink"></TextBlock>
+        <Grid Grid.Row ="1" Grid.Column ="1" Grid.RowSpan ="4" Grid.ColumnSpan="5"> 
             <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
                 <ColumnDefinition />
                 <ColumnDefinition />
                 <ColumnDefinition />
@@ -29,21 +39,23 @@
                 <RowDefinition />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Button Grid.Column="0" Grid.Row="0">1</Button>
-            <Button Grid.Column="1" Grid.Row="0">2</Button>
-            <Button Grid.Column="2" Grid.Row="0">3</Button>
-            
-            <Button Grid.Column="0" Grid.Row="1">4</Button>
-            <Button Grid.Column="1" Grid.Row="1">5</Button>
-            <Button Grid.Column="2" Grid.Row="1">6</Button>
-
-            <Button Grid.Column="0" Grid.Row="2">7</Button>
-            <Button Grid.Column="1" Grid.Row="2">8</Button>
-            <Button Grid.Column="2" Grid.Row="2">9</Button>
-
-            <Button Grid.Column="0" Grid.Row="3">.</Button>
-            <Button Grid.Column="1" Grid.Row="3">0</Button>
-            <Button Grid.Column="2" Grid.Row="3">*</Button>
+            <Button Click="NumberButton_click" Name="Button_1" Grid.Column="0" FontSize="50">1</Button>
+            <Button Click="NumberButton_click" Name="Button_2" Grid.Column="1" FontSize="50">2</Button>
+            <Button Click="NumberButton_click" Name="Button_3" Grid.Column="2" FontSize="50">3</Button>
+            <Button Click="NumberButton_click" Name="Button_4" Grid.Row="1" FontSize="50">4</Button>
+            <Button Click="NumberButton_click" Name="Button_5" Grid.Column="1" Grid.Row="1" FontSize="50">5</Button>
+            <Button Click="NumberButton_click" Name="Button_6" Grid.Column="2" Grid.Row="1" FontSize="50">6</Button>
+            <Button Click="NumberButton_click" Name="Button_7" Grid.Row="2" FontSize="50">7</Button>
+            <Button Click="NumberButton_click" Name="Button_8" Grid.Column="1" Grid.Row="2" FontSize="50">8</Button>
+            <Button Click="NumberButton_click" Name="Button_9" Grid.Column="2" Grid.Row="2" FontSize="50">9</Button>
+            <Button Click="NumberButton_click" Name="Button_0" Grid.Column="1" Grid.Row="3" FontSize="50">0</Button>
+            <Button Click="NumberButton_click" Name="Button_comma" Grid.Column="2" Grid.Row="3" FontSize="50" >,</Button>
+            <Button Click="NumberButton_click" Name="Button_star" Grid.Row="3" FontSize="50">*</Button>
+            <Button Click="NumberButton_click" Name="Button_equal" Grid.Column="4" Grid.Row="2" Grid.RowSpan="2" FontSize="50">=</Button>
+            <Button Click="NumberButton_click" Name="Button_addition" Grid.Column="3" Grid.Row="2" Grid.RowSpan="2" FontSize="50">+</Button>
+            <Button Click="NumberButton_click" Name="Button_clear" Grid.Column="4" Grid.Row="0" Grid.RowSpan="2" FontSize="40">Clear</Button>
+            <Button Click="NumberButton_click" Name="Button_subtraktion" Grid.Column="3" FontSize="50">-</Button>
+            <Button Click="NumberButton_click" Name="Button_division" Grid.Column="3" Grid.Row="1" FontSize="40">/</Button>
         </Grid>
     </Grid>
 </Window>
