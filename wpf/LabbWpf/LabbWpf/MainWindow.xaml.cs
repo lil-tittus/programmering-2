@@ -41,15 +41,52 @@ namespace LabbWpf
                     case "7":
                     case "8":
                     case "9":
+                    case "+":
+                    case "-":                    
                         InOutField.Text += button.Content;
                         break;
+                    case "=":
+                        if (InOutField.Text.Contains('+'))
+                        {
 
+                        }
 
+                        else if (InOutField.Text.Contains('-'))
+                        {
+
+                        }
+
+                        else if (InOutField.Text.Contains('/'))
+                        {
+
+                        }
+
+                        else if (InOutField.Text.Contains('x'))
+                        {
+
+                        }
+
+                        else if (InOutField.Text.Contains('^'))
+                        {
+
+                        }
+
+                        else if (InOutField.Text.Contains('√'))
+                        {
+
+                        }
+
+                        break;
+                        
 
                     default:
                         break;
-                        var intAsString = text.Split("+");
+
+                        
                 }
+
+                    public string calculatorAlgorithm (char Operator)
+
             }
         }
     }
