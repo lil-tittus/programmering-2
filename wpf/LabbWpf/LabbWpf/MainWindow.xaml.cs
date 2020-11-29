@@ -101,7 +101,7 @@ namespace LabbWpf
         {
             var result = 0.0;
 
-            var numberContainer = InOutField.Text.Split('+', '-', 'x', '√', '^', '/');
+            var numberContainer = InOutField.Text.Split('+', '-', 'x', '√', '^', '÷');
 
             if(numberContainer[0] == "")
             {
