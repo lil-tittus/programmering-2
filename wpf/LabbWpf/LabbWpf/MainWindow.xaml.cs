@@ -42,42 +42,50 @@ namespace LabbWpf
                     case "8":
                     case "9":
                     case "+":
-                    case "-":                    
+                    case "-":
+                    case "^":
+                    case "x":
+                    case "/":
+                    case "√":
+                    case ",":
                         InOutField.Text += button.Content;
                         break;
                     case "=":
                         if (InOutField.Text.Contains('+'))
                         {
-
+                            InOutField.Text = calculatorAlgorithm('+');
                         }
 
                         else if (InOutField.Text.Contains('-'))
                         {
-
+                            InOutField.Text = calculatorAlgorithm('-');
                         }
 
                         else if (InOutField.Text.Contains('/'))
                         {
-
+                            InOutField.Text = calculatorAlgorithm('/');
                         }
 
                         else if (InOutField.Text.Contains('x'))
                         {
-
+                            InOutField.Text = calculatorAlgorithm('x');
                         }
 
                         else if (InOutField.Text.Contains('^'))
                         {
-
+                            InOutField.Text = calculatorAlgorithm('^');
                         }
 
                         else if (InOutField.Text.Contains('√'))
                         {
-
+                            InOutField.Text = calculatorAlgorithm('√');
                         }
 
                         break;
-                        
+
+                    case "Clear":
+                        InOutField.Text = "";
+                        break;
 
                     default:
                         break;
@@ -85,9 +93,55 @@ namespace LabbWpf
                         
                 }
 
-                    public string calculatorAlgorithm (char Operator)
+               
 
             }
+        }
+        private string calculatorAlgorithm(char mathOperator)
+        {
+            var result = 0.0;
+
+            var numberContainer = InOutField.Text.Split('+', '-', 'x', '√', '^', '/');
+
+            if(numberContainer[0] == "")
+            {
+                numberContainer[0] = "1";
+            }
+            
+            var firstNumber = Convert.ToDouble(numberContainer[0]);
+            var secondNumber = Convert.ToDouble(numberContainer[1]);
+
+            
+
+            switch (mathOperator)
+                    {
+                case '+':
+                    result = firstNumber + secondNumber;
+                    break;
+                case '-':
+                    result = firstNumber - secondNumber;
+                    break;
+                case '^':
+                    result = Math.Pow(firstNumber, secondNumber);
+                    break;
+
+                case 'x':
+                    result = firstNumber * secondNumber;
+                    break;
+
+                case '/':
+                    result = firstNumber / secondNumber;
+                    break;
+
+                case '√':
+                    result = Math.Sqrt(secondNumber);
+                    break;
+
+                default:
+                        break;
+            }
+            var resultView = Convert.ToString(result);
+            return resultView;
         }
     }
 }
