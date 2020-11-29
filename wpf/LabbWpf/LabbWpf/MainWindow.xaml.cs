@@ -45,7 +45,7 @@ namespace LabbWpf
                     case "-":
                     case "^":
                     case "x":
-                    case "/":
+                    case "÷":
                     case "√":
                     case ",":
                         InOutField.Text += button.Content;
@@ -61,9 +61,9 @@ namespace LabbWpf
                             InOutField.Text = calculatorAlgorithm('-');
                         }
 
-                        else if (InOutField.Text.Contains('/'))
+                        else if (InOutField.Text.Contains('÷'))
                         {
-                            InOutField.Text = calculatorAlgorithm('/');
+                            InOutField.Text = calculatorAlgorithm('÷');
                         }
 
                         else if (InOutField.Text.Contains('x'))
@@ -118,9 +118,11 @@ namespace LabbWpf
                 case '+':
                     result = firstNumber + secondNumber;
                     break;
+
                 case '-':
                     result = firstNumber - secondNumber;
                     break;
+
                 case '^':
                     result = Math.Pow(firstNumber, secondNumber);
                     break;
@@ -129,7 +131,7 @@ namespace LabbWpf
                     result = firstNumber * secondNumber;
                     break;
 
-                case '/':
+                case '÷':
                     result = firstNumber / secondNumber;
                     break;
 
