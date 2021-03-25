@@ -55,7 +55,7 @@
             <Button Click="NumberButton_click" Name="Button_addition" Grid.Column="3" Grid.Row="2" Grid.RowSpan="1" FontSize="50">+</Button>
             <Button Click="NumberButton_click" Name="Button_clear" Grid.Column="4" Grid.Row="0" Grid.RowSpan="2" FontSize="40">Clear</Button>
             <Button Click="NumberButton_click" Name="Button_subtraktion" Grid.Column="3" FontSize="50">-</Button>
-            <Button Click="NumberButton_click" Name="Button_division" Grid.Column="3" Grid.Row="1" FontSize="40">/</Button>
+            <Button Click="NumberButton_click" Name="Button_division" Grid.Column="3" Grid.Row="1" FontSize="40">÷</Button>
             <Button Click="NumberButton_click" Name="Button_squared" Grid.Column="3" Grid.Row="4" FontSize="40">^</Button>
             <Button Click="NumberButton_click" Name="Button_squaredroot" Grid.Column="4" Grid.Row="4" FontSize="40">√</Button> 
             </Grid>
