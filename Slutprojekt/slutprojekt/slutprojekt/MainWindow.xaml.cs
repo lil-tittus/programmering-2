@@ -172,13 +172,13 @@ namespace slutprojekt
         }
 
         /// <summary>
-        /// 
+        /// This method gives the player a choise to play again.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Object</param>
+        /// <param name="e">Event</param>
         private void KeyIsDown(object sender, KeyEventArgs e)
         {   
-            //
+            // Enter makes the game play again if you lose.
             if(e.Key == Key.Enter && gameOver == true)
             {
                 StartGame();
@@ -186,13 +186,13 @@ namespace slutprojekt
         }
 
         /// <summary>
-        /// 
+        /// This method makes the player jump.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Object</param>
+        /// <param name="e">Event</param>
         private void KeyIsUp(object sender, KeyEventArgs e)
         {   
-            //
+            // This if application makes the space key able to make the player jump. It also detetermines the speed. 
             if(e.Key == Key.Space && jumping == false && Canvas.GetTop(player) > 261)
             {
                 jumping = true;
@@ -232,9 +232,9 @@ namespace slutprojekt
         }
 
         /// <summary>
-        /// 
+        /// This method contains a swtich that shows a slideshow of the player moving.
         /// </summary>
-        /// <param name="i"></param>
+        /// <param name="i">Timer</param>
         private void RunSprite(double i)
         {
             switch (i)
