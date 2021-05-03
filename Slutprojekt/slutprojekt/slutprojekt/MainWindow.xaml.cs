@@ -110,7 +110,7 @@ namespace slutprojekt
 
                 spriteIndex += .5;
 
-                //
+                
                 if(spriteIndex > 8)
                 {
                     spriteIndex = 1;
@@ -130,7 +130,7 @@ namespace slutprojekt
                 speed = 12;
             }
 
-            //
+            //If the player is on the ground there is no force effecting the player.
             if(force < 0)
             {
                 jumping = false;
