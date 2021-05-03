@@ -46,6 +46,10 @@ namespace slutprojekt
         int[] obstaclePosition = { 320, 310, 300, 305, 315 };
 
         int score = 0; 
+
+       /// <summary>
+       /// This method starts the clock that makes the images move forward. It also starts the game.
+       /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -55,25 +59,32 @@ namespace slutprojekt
             gameTimer.Tick += GameEngine;
             gameTimer.Interval = TimeSpan.FromMilliseconds(20);
 
-            backgroundSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Slutprojekt./background.gif"));
+            backgroundSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/background.gif"));
 
             background.Fill = backgroundSprite;
             background2.Fill = backgroundSprite;
-
+             
             StartGame();
 
         }
 
+        /// <summary>
+        /// This method 
+        /// </summary>
+        /// <param name="sender">Thit is the object</param>
+        /// <param name="e">This is the event</param>
         private void GameEngine(object sender, EventArgs e)
         {
             Canvas.SetLeft(background, Canvas.GetLeft(background) - 3);
             Canvas.SetLeft(background2, Canvas.GetLeft(background2) - 3);
 
+            //
             if(Canvas.GetLeft(background) < -1262)
             {
                 Canvas.SetLeft(background, Canvas.GetLeft(background2) + background2.Width);
             }
 
+            //
             if (Canvas.GetLeft(background2) < -1262)
             {
                 Canvas.SetLeft(background2, Canvas.GetLeft(background) + background.Width);
@@ -88,6 +99,7 @@ namespace slutprojekt
             obstacleHitBox = new Rect(Canvas.GetLeft(obstacle), Canvas.GetTop(obstacle), obstacle.Width, obstacle.Height);
             groundHitBox = new Rect(Canvas.GetLeft(ground), Canvas.GetTop(ground), ground.Width, ground.Height);
 
+            //
             if (playerHitBox.IntersectsWith(groundHitBox))
             {
                 speed = 0;
@@ -105,6 +117,7 @@ namespace slutprojekt
                 RunSprite(spriteIndex);
             }
 
+            //
             if(jumping == true)
             {
                 speed = -9;
@@ -116,11 +129,13 @@ namespace slutprojekt
                 speed = 12;
             }
 
+            //
             if(force < 0)
             {
                 jumping = false;
             }
 
+            //
             if(Canvas.GetLeft(obstacle) < -50)
             {
                 Canvas.SetLeft(obstacle, 950);
@@ -130,6 +145,7 @@ namespace slutprojekt
                 score += 1;
             }
 
+            //
             if (playerHitBox.IntersectsWith(obstacleHitBox))
             {
                 gameOver = true;
@@ -137,6 +153,7 @@ namespace slutprojekt
                 gameTimer.Stop();
             }
 
+            //
             if(gameOver == true)
             {
                 obstacle.Stroke = Brushes.Black;
@@ -152,30 +169,43 @@ namespace slutprojekt
                 player.StrokeThickness = 0;
                 obstacle.StrokeThickness = 0;
             }
-
-
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void KeyIsDown(object sender, KeyEventArgs e)
-        {
+        {   
+            //
             if(e.Key == Key.Enter && gameOver == true)
             {
                 StartGame();
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void KeyIsUp(object sender, KeyEventArgs e)
-        {
+        {   
+            //
             if(e.Key == Key.Space && jumping == false && Canvas.GetTop(player) > 261)
             {
                 jumping = true;
                 force = 15;
                 speed = -12;
 
-                playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Slutprojekt./newRunner_02.gif"));
+                playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/newRunner_02.gif"));
             }
         }
 
+        /// <summary>
+        /// This method starts the game by moving the background from starting piont. It also calls for the runsprite method so player can run.
+        /// </summary>
         private void StartGame()
         {
             Canvas.SetLeft(background, 0);
@@ -189,7 +219,7 @@ namespace slutprojekt
 
             RunSprite(1);
 
-            obstacleSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Slutprojekt./obstacle.png"));
+            obstacleSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/obstacle.png"));
             obstacle.Fill = obstacleSprite;
 
             jumping = false;
@@ -201,33 +231,37 @@ namespace slutprojekt
             gameTimer.Start();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="i"></param>
         private void RunSprite(double i)
         {
             switch (i)
             {
                 case 1:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Slutprojekt./newRunner_01.gif"));
+                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/newRunner_01.gif"));
                     break;
                 case 2:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Slutprojekt./newRunner_02.gif"));
+                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/newRunner_02.gif"));
                     break;
                 case 3:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Slutprojekt./newRunner_03.gif"));
+                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/newRunner_03.gif"));
                     break;
                 case 4:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Slutprojekt./newRunner_04.gif"));
+                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/newRunner_04.gif"));
                     break;
                 case 5:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Slutprojekt./newRunner_05.gif"));
+                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/newRunner_05.gif"));
                     break;
                 case 6:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Slutprojekt./newRunner_06.gif"));
+                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/newRunner_06.gif"));
                     break;
                 case 7:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Slutprojekt./newRunner_07.gif"));
+                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/newRunner_07.gif"));
                     break;
                 case 8:
-                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Slutprojekt./newRunner_08.gif"));
+                    playerSprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/newRunner_08.gif"));
                     break;
             }
 

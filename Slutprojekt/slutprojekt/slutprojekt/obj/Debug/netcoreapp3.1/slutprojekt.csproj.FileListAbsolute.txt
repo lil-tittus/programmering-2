@@ -4,7 +4,6 @@ C:\Users\jared.tittus\Documents\Github\programmering-2\Slutprojekt\slutprojekt\s
 C:\Users\jared.tittus\Documents\Github\programmering-2\Slutprojekt\slutprojekt\slutprojekt\bin\Debug\netcoreapp3.1\slutprojekt.runtimeconfig.dev.json
 C:\Users\jared.tittus\Documents\Github\programmering-2\Slutprojekt\slutprojekt\slutprojekt\bin\Debug\netcoreapp3.1\slutprojekt.dll
 C:\Users\jared.tittus\Documents\Github\programmering-2\Slutprojekt\slutprojekt\slutprojekt\bin\Debug\netcoreapp3.1\slutprojekt.pdb
-C:\Users\jared.tittus\Documents\Github\programmering-2\Slutprojekt\slutprojekt\slutprojekt\obj\Debug\netcoreapp3.1\slutprojekt.csprojAssemblyReference.cache
 C:\Users\jared.tittus\Documents\Github\programmering-2\Slutprojekt\slutprojekt\slutprojekt\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\jared.tittus\Documents\Github\programmering-2\Slutprojekt\slutprojekt\slutprojekt\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\jared.tittus\Documents\Github\programmering-2\Slutprojekt\slutprojekt\slutprojekt\obj\Debug\netcoreapp3.1\slutprojekt_MarkupCompile.cache
