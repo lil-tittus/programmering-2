@@ -69,7 +69,7 @@ namespace slutprojekt
         }
 
         /// <summary>
-        /// This method 
+        /// This method is about the how the game works and it is buld with if applicationer. 
         /// </summary>
         /// <param name="sender">Thit is the object</param>
         /// <param name="e">This is the event</param>
@@ -78,13 +78,13 @@ namespace slutprojekt
             Canvas.SetLeft(background, Canvas.GetLeft(background) - 3);
             Canvas.SetLeft(background2, Canvas.GetLeft(background2) - 3);
 
-            //
+            //This makes the second background appear after the first background.
             if(Canvas.GetLeft(background) < -1262)
             {
                 Canvas.SetLeft(background, Canvas.GetLeft(background2) + background2.Width);
             }
 
-            //
+            //This makes the first background appear after the second background.
             if (Canvas.GetLeft(background2) < -1262)
             {
                 Canvas.SetLeft(background2, Canvas.GetLeft(background) + background.Width);
@@ -99,7 +99,7 @@ namespace slutprojekt
             obstacleHitBox = new Rect(Canvas.GetLeft(obstacle), Canvas.GetTop(obstacle), obstacle.Width, obstacle.Height);
             groundHitBox = new Rect(Canvas.GetLeft(ground), Canvas.GetTop(ground), ground.Width, ground.Height);
 
-            //
+            //This makes the player able to land on the ground after jumping.
             if (playerHitBox.IntersectsWith(groundHitBox))
             {
                 speed = 0;
@@ -110,6 +110,7 @@ namespace slutprojekt
 
                 spriteIndex += .5;
 
+                //
                 if(spriteIndex > 8)
                 {
                     spriteIndex = 1;
@@ -117,7 +118,7 @@ namespace slutprojekt
                 RunSprite(spriteIndex);
             }
 
-            //
+            //This slows down the speed when jumping. If player not jump speed higher.
             if(jumping == true)
             {
                 speed = -9;
@@ -135,7 +136,7 @@ namespace slutprojekt
                 jumping = false;
             }
 
-            //
+            //This makes score one higher every time the player jump over an obstacle.
             if(Canvas.GetLeft(obstacle) < -50)
             {
                 Canvas.SetLeft(obstacle, 950);
@@ -145,7 +146,7 @@ namespace slutprojekt
                 score += 1;
             }
 
-            //
+            //When player runs into obstacle the gme stops.
             if (playerHitBox.IntersectsWith(obstacleHitBox))
             {
                 gameOver = true;
@@ -153,7 +154,7 @@ namespace slutprojekt
                 gameTimer.Stop();
             }
 
-            //
+            //When player hit the obstacle the hitbox for the player turns red and the hitbox for the obstacle turns black.
             if(gameOver == true)
             {
                 obstacle.Stroke = Brushes.Black;
