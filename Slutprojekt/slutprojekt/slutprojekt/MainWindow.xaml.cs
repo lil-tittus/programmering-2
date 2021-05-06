@@ -90,6 +90,7 @@ namespace slutprojekt
                 Canvas.SetLeft(background2, Canvas.GetLeft(background) + background.Width);
             }
 
+            //This makes the player move and the obstacles stay still. 
             Canvas.SetTop(player, Canvas.GetTop(player) + speed);
             Canvas.SetLeft(obstacle, Canvas.GetLeft(obstacle) - 12);
 
