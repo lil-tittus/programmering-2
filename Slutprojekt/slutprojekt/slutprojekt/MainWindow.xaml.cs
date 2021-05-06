@@ -71,8 +71,8 @@ namespace slutprojekt
         /// <summary>
         /// This method is about the how the game works and it is buld with if applicationer. 
         /// </summary>
-        /// <param name="sender">Thit is the object</param>
-        /// <param name="e">This is the event</param>
+        /// <param name="sender">Object sender</param>
+        /// <param name="e">Event checker</param>
         private void GameEngine(object sender, EventArgs e)
         {
             Canvas.SetLeft(background, Canvas.GetLeft(background) - 3);
@@ -111,7 +111,7 @@ namespace slutprojekt
 
                 spriteIndex += .5;
 
-                
+                //If the player dies the animation stops at the player
                 if(spriteIndex > 8)
                 {
                     spriteIndex = 1;
@@ -176,8 +176,8 @@ namespace slutprojekt
         /// <summary>
         /// This method gives the player a choise to play again.
         /// </summary>
-        /// <param name="sender">Object</param>
-        /// <param name="e">Event</param>
+        /// <param name="sender">Object sender</param>
+        /// <param name="e">Event checker</param>
         private void KeyIsDown(object sender, KeyEventArgs e)
         {   
             // Enter makes the game play again if you lose.
@@ -190,8 +190,8 @@ namespace slutprojekt
         /// <summary>
         /// This method makes the player jump.
         /// </summary>
-        /// <param name="sender">Object</param>
-        /// <param name="e">Event</param>
+        /// <param name="sender">Object sender</param>
+        /// <param name="e">Event checker</param>
         private void KeyIsUp(object sender, KeyEventArgs e)
         {   
             // This if application makes the space key able to make the player jump. It also detetermines the speed. 
